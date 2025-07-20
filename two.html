@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .right{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .one{
+            z-index: -1;
+            position: absolute;
+            width: 440px;
+            height: 440px;
+            border-radius: 50%;
+            border: 3px solid rgb(241, 228, 255);
+        }
+        .two{
+            z-index: 0;
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: rgb(241, 228, 255);
+        }
+        .right img{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="right">
+        <div class="one"></div>
+        <div class="two"></div>
+        <img src="images/main-camera.png" alt="">
+    </div>
+</body>
+</html>
